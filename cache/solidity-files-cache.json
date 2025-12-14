@@ -38,8 +38,8 @@
       ]
     },
     "/Users/iansu/Program/Visual Studio Code/HardHat/Learn HardHat/contracts/checkaddr.sol": {
-      "lastModificationDate": 1764230307980,
-      "contentHash": "ec20ebb99c95975f883736514ea6e2dc",
+      "lastModificationDate": 1764305752028,
+      "contentHash": "f4bf5cbf090176bedbbfb1152bb432ea",
       "sourceName": "contracts/checkaddr.sol",
       "solcConfig": {
         "version": "0.8.20",
@@ -71,6 +71,42 @@
       ],
       "artifacts": [
         "CheckAddr"
+      ]
+    },
+    "/Users/iansu/Program/Visual Studio Code/HardHat/Learn HardHat/contracts/keccak256.sol": {
+      "lastModificationDate": 1765348866245,
+      "contentHash": "e2c7be9b6f0368024ceff9f61700dbc2",
+      "sourceName": "contracts/keccak256.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Hash"
       ]
     }
   }
