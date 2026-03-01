@@ -48,7 +48,8 @@ describe("ERC20 Transfer Test", function () {
       console.log("value:", parsed.args[2].toString());
     }
   }
-
+    console.log(owner.address)
+    console.log(addr1.address)
     console.log("驗證結果");
     expect(ownerBalanceAfter).to.equal(500n);
     expect(addr1BalanceAfter).to.equal(500n);
