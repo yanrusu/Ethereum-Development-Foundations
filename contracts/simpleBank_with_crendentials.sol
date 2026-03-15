@@ -13,9 +13,13 @@ contract SimpleBank1{
     
     address public _token;
     address public b_token;
+    address public owner_;
     mapping (address => uint) public deposits;
 
-
+    modifier only_owner() {
+        require(owner_ == msg.sender,"not the owner");
+        _;
+    }
     constructor(address token_addr,address btoken_addr){
         _token = token_addr;
         b_token = btoken_addr;

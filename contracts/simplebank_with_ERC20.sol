@@ -31,10 +31,6 @@ contract SimpleBank_with_ERC20{
     event Mint(address indexed from, address indexed to, uint256 indexed);
     event Burn(address indexed from, address indexed to, uint256 indexed);
 
-    modifier only_owner() {
-        require(owner_ == msg.sender,"not the owner");
-        _;
-    }
     function totalSupply() external view returns (uint256){
         return totalSupply_;
     }
@@ -77,13 +73,13 @@ contract SimpleBank_with_ERC20{
         return true;
     }
 
-    function mint(address to, uint256 amount) internal { 
+    function _mint(address to, uint256 amount) internal { 
         totalSupply_ += amount;
         _balanceOf[to] += amount;
         emit Mint(address(this), to, amount);
     }
 
-    function burn(address from, uint256 amount) internal {
+    function _burn(address from, uint256 amount) internal {
         require(_balanceOf[from]>=amount,"insufficient bToken");
         totalSupply_ -= amount;
         _balanceOf[from] -= amount;
@@ -92,14 +88,14 @@ contract SimpleBank_with_ERC20{
 
     function deposit(uint256 amount) external {
         IERC20(token_).transferFrom(msg.sender,address(this),amount);
-        mint(msg.sender, amount);
+        _mint(msg.sender, amount);
         deposits[msg.sender] += amount;
     }
 
     function withdraw(uint256 amount) external {
         require(deposits[msg.sender] >= amount, "insufficient deposit");
         deposits[msg.sender] -= amount;
-        burn(msg.sender, amount);
+        _burn(msg.sender, amount);
         IERC20(token_).transfer(msg.sender, amount);
     }
 }

@@ -15,8 +15,18 @@ contract Reentryattack_bank {
         require(deposits[msg.sender] >= amount, "insufficient deposit");
         (bool success, ) = msg.sender.call{value: amount}("");
         require(success,"Failed");
-        deposits[msg.sender] -= amount;
+        unchecked {deposits[msg.sender] -= amount;}
+        // deposits[msg.sender] -= amount;
         emit Withdraw(msg.sender, amount);
     }
+    
+    function withdrawall() external {
+        // require(deposits[msg.sender] >= amount, "insufficient deposit");
+        (bool success, ) = msg.sender.call{value: deposits[msg.sender]}("");
+        require(success,"Failed");
+        // unchecked {deposits[msg.sender] -= amount;}
+        deposits[msg.sender] = 0;
+        // emit Withdraw(msg.sender, amount);
+    }    
 
 }
