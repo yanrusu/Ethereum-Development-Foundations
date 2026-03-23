@@ -1071,6 +1071,45 @@
       "artifacts": [
         "InterfaceIdViewer"
       ]
+    },
+    "/Users/iansu/Program/Visual Studio Code/HardHat/Learn HardHat/contracts/13/MyERC721_metadate.sol": {
+      "lastModificationDate": 1774259545645,
+      "contentHash": "619e663db6149069867543faea745521",
+      "sourceName": "contracts/13/MyERC721_metadate.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC721Receiver",
+        "MyERC72_metadata"
+      ]
     }
   }
 }
