@@ -1,6 +1,6 @@
 # Learn Hardhat
 
-這是一個以 Hardhat 開發模組為核心的 Solidity 實作練習，理論可至https://yanrusu.github.io/categories/blockchain/觀看，主題包含但不限於：
+這是一個以 Hardhat 開發模組為核心的 Solidity 實作練習，理論可至https://yanrusu.github.io/categories/blockchain/ 觀看，主題包含但不限於：
 
 - 基礎 ERC20 與部署
 - 地址與雜湊（`checkaddr`、`keccak256`、`abi encode/decode`）
