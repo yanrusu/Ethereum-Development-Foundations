@@ -19,6 +19,7 @@
 ## 部署
 ### Arbitrum Sepolia
 部署於 Arbitrum Sepolia Testnet
+
 `hardhat.config.js` 目前使用 Hardhat 的 `vars.get(...)` 讀取參數，請先設定：
 
 ```bash
