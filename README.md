@@ -1,15 +1,20 @@
 # Learn Hardhat
 
 這是一個以 Hardhat 開發模組為核心的 Solidity 實作練習，理論可至
-https://yanrusu.github.io/categories/blockchain/ 閱讀，主題包含但不限於：
+https://yanrusu.github.io/categories/blockchain/ 閱讀，截至目前為止的主題包含但不限於：
 
-- 基礎 ERC20 與部署
-- 地址與雜湊（`checkaddr`、`keccak256`、`abi encode/decode`）
-- fallback/receive 與事件
-- 介面識別（`interfaceId`）
-- ERC20 + Vault / Bank
-- 重入攻擊示範
-- ERC721（含 metadata）
+
+| 主題 | 資料夾|
+| --- | --- |
+| 基礎合約部署與開發工具 |1|
+| 地址與雜湊（`checkaddr`、`keccak256`、`abi encode/decode`） |3、5、6|
+| Event and Listening |7|
+| 特殊函數 (`fallback and receive`)|8|
+| 介面識別（`interfaceId`） |9|
+| ERC20 |10|
+| ERC20 Bank |11|
+| 重入攻擊示範 |12|
+| ERC721（含 metadata） |13|
 
 ## 開發環境
 
