@@ -882,6 +882,156 @@
       "artifacts": [
         "IERC165"
       ]
+    },
+    "/Users/iansu/Program/Visual Studio Code/HardHat/Learn HardHat/contracts/14/ERC721.sol": {
+      "lastModificationDate": 1774851554056,
+      "contentHash": "ed97a4a525891988874d1d1fd4701f53",
+      "sourceName": "contracts/14/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC721_14",
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/iansu/Program/Visual Studio Code/HardHat/Learn HardHat/contracts/14/ERC721A.sol": {
+      "lastModificationDate": 1774850119769,
+      "contentHash": "6cd9547727b3ba9321907bd1983e1346",
+      "sourceName": "contracts/14/ERC721A.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "erc721a/contracts/ERC721A.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC721A_14"
+      ]
+    },
+    "/Users/iansu/Program/Visual Studio Code/HardHat/Learn HardHat/node_modules/erc721a/contracts/ERC721A.sol": {
+      "lastModificationDate": 1774847993692,
+      "contentHash": "f00e8b038a7d958f397c9fb8d107ec1c",
+      "sourceName": "erc721a/contracts/ERC721A.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721A.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ERC721A",
+        "ERC721A__IERC721Receiver"
+      ]
+    },
+    "/Users/iansu/Program/Visual Studio Code/HardHat/Learn HardHat/node_modules/erc721a/contracts/IERC721A.sol": {
+      "lastModificationDate": 1774847993696,
+      "contentHash": "f6791e37b41ad9fa583adb9845c17d51",
+      "sourceName": "erc721a/contracts/IERC721A.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "IERC721A"
+      ]
     }
   }
 }

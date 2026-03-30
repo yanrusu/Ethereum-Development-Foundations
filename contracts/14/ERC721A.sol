@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+import "erc721a/contracts/ERC721A.sol";
+
+contract ERC721A_14 is ERC721A {
+    constructor() ERC721A("MyERC721A", "MYNFTA") {}
+
+    function mint(uint256 quantity) external payable {
+        // `_mint`'s second argument now takes in a `quantity`, not a `tokenId`.
+        _mint(msg.sender, quantity);
+    }
+}
